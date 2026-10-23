@@ -1,31 +1,52 @@
-# Exercício MongoDB — Consultas com Estudantes e Professores
+# Exercícios MongoDB — Consultas NoSQL
 
-Repositório desenvolvido como parte dos estudos de **Quality Assurance (QA)**, com o objetivo de praticar consultas e operações de pesquisa utilizando **MongoDB**.
+Projeto educacional para praticar consultas e operações de pesquisa no MongoDB usando conjuntos de dados de estudantes e professores.
 
-## Objetivo
+## Objetivos
+- Filtrar e ordenar documentos.
+- Pesquisar valores com expressões regulares.
+- Projetar campos específicos.
+- Agrupar e contabilizar documentos com agregações.
 
-Praticar os principais recursos de consulta do MongoDB através de uma base de dados simples contendo informações sobre estudantes e professores.
+## Tecnologias
+- MongoDB
+- JavaScript para consultas
+- Arquivos JSON para dados de exemplo
 
-Durante o exercício foram desenvolvidas consultas para:
+## Pré-requisitos
+- MongoDB instalado ou acesso a uma instância MongoDB.
+- Mongo Shell (`mongosh`) ou ferramenta compatível.
 
-* Ordenar documentos;
-* Filtrar estudantes por curso;
-* Filtrar estudantes por nota;
-* Pesquisar nomes utilizando expressão regular;
-* Identificar estudantes matriculados em mais de um curso;
-* Filtrar professores por cargo;
-* Consultar professores por curso;
-* Identificar professores que lecionam mais de um curso;
-* Selecionar campos específicos dos documentos;
-* Contabilizar estudantes por curso utilizando agregação.
+## Como executar
+1. Inicie ou acesse sua instância MongoDB.
+2. Importe os arquivos JSON para coleções adequadas ou use-os como referência para inserir os documentos.
+3. Abra `queries-mongodb.js` e execute as consultas no contexto do banco e das coleções esperadas.
+4. Confira os resultados e adapte nomes de banco/coleção conforme a configuração local.
 
-## O conhecimento adquirido pode ser aplicado em atividades de QA envolvendo:
+## Estrutura do projeto
+```text
+atividade-NoSQL/
+├── estudantes.json
+├── professores.json
+├── queries-mongodb.js
+└── README.md
+```
 
-* Testes de API;
-* Validação de dados;
-* Testes de integração;
-* Automação de testes;
-* Validação de banco de dados;
-* Análise de resultados de testes.
+## Desafios práticos
+O exercício trabalha ordenação, filtros por curso, nota e cargo, pesquisa textual, seleção de campos e agregação para contabilizar estudantes por curso.
 
-Este exercício foi desenvolvido durante a formação em **Quality Assurance (QA)**, com foco no aprendizado de bancos de dados e na utilização do MongoDB para consultas e manipulação de dados.
+## Boas práticas adotadas
+- Separação entre dados de exemplo e consultas.
+- Uso de conjuntos JSON para facilitar a reprodução do exercício.
+- Consultas organizadas por objetivo.
+
+## 📚 Aprendizados
+A atividade permitiu praticar consultas NoSQL com MongoDB, incluindo filtros, ordenação, expressões regulares, projeção de campos e pipelines de agregação. Também reforçou a importância de entender a estrutura dos documentos e validar os resultados das consultas.
+
+## Considerações finais
+Este repositório contém material de estudo. Os nomes do banco e das coleções devem corresponder ao contexto usado nas consultas durante a execução.
+
+---
+
+## 🎓 Formação
+Atividade desenvolvida durante a formação profissionalizante em **Quality Assurance (QA) pela EBAC — Escola Britânica de Artes Criativas e Tecnologia**.
